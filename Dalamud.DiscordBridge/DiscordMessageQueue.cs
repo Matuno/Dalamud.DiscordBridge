@@ -294,6 +294,10 @@ namespace Dalamud.DiscordBridge
                         Logger.Error(e, "Could not process event.");
                     }
                 }
+                else
+                {
+                    Thread.Sleep(10);
+                }
 
                 Thread.Yield();
             }
